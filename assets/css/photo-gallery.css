@@ -1,0 +1,72 @@
+/* =====================================
+   Page Styles
+======================================== */
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-size: 1.4em;
+	font-family: 'Varela Round', sans-serif;
+  font-weight: bold;
+	color: #6e859c;
+  padding: 0;
+  margin: 0;
+	background: #fff;
+}
+
+.img {
+	  color: #fff;
+	  background: #fff;
+		transition: 1s;
+	}
+	.img img:hover {
+		filter: grayscale(100%);
+		transform: scale(1.1);
+	}
+
+	.searchbar{
+	   display:flex;
+	   justify-content: center;
+	}
+
+	#search{
+	   text-align: left;
+	   border:solid 3px rgb(170, 170, 170);
+	   border-radius:5px;
+	   padding:5px 5px;
+	   font-family:inherit;
+	   width:30vw;
+		 height: 50px;
+	}
+
+
+/* Main Layout Styles
+================================ */
+
+.main-header {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #384047;
+}
+
+.main-footer, .main-header {
+	text-align: center;
+	margin-top: 30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+ 	background-color: black;
+}
+
+/* =====================================
+   Grid Layout
+======================================== */
+
+.gallery {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    background: #fff;
+    margin: 45px auto;
+    padding-left: .85em;
